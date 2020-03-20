@@ -1,0 +1,25 @@
+{
+  "name": "chat-app-cra",
+  "version": "1.0.0",
+  "description": "A simple chat app using node, socket.io, and react",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "clientinstall": "npm install --preifx client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Hani H.",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.2"
+  }
+}
