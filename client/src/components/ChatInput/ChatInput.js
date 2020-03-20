@@ -10,7 +10,9 @@ const ChatInput = ({ message, setMessage, sendMessage }) => (
       onChange={({ target: { value } }) => setMessage(value)}
       onKeyPress={e => (e.key === "Enter" ? sendMessage(e) : null)}
     />
-    <SendButton type="submit">Send</SendButton>
+    <SendButton type="submit">
+      <i className="fas fa-paper-plane"></i>
+    </SendButton>
   </Form>
 );
 

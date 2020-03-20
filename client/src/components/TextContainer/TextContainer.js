@@ -5,37 +5,22 @@ import onlineIcon from "../Icon/onlineIcon.png";
 const TextContainer = ({ users }) => (
   <Container>
     <div>
-      <h1>
-        Realtime Chat Application{" "}
-        <span role="img" aria-label="emoji">
-          💬
-        </span>
-      </h1>
-      <h2>
-        Created with React, Express, Node and Socket.IO{" "}
-        <span role="img" aria-label="emoji">
-          ❤️
-        </span>
-      </h2>
-      <h2>
-        Try it out right now!{" "}
-        <span role="img" aria-label="emoji">
-          ⬅️
-        </span>
-      </h2>
+      <h1>Realtime Chat Application</h1>
+      <h2>Build with Node, Exprees, and Socket.IO on backend.</h2>
+      <h2>React, Styled Components, Socket.IO Client on frontend.</h2>
     </div>
     {users ? (
       <div>
-        <h1>People currently chatting:</h1>
+        <h4>People currently chatting:</h4>
         <ActiveContainer>
-          <h2>
+          <h5>
             {users.map(({ name }) => (
               <ActiveItem key={name}>
                 {name}
                 <img alt="Online Icon" src={onlineIcon} />
               </ActiveItem>
             ))}
-          </h2>
+          </h5>
         </ActiveContainer>
       </div>
     ) : null}

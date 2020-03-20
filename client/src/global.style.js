@@ -4,7 +4,7 @@ export const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
   html, body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #1a1a1d;
+    background-color: #1b262c;
   }
   * {
     box-sizing: border-box;
@@ -28,7 +28,7 @@ export const GlobalStyle = createGlobalStyle`
     color: #353535;
   }
   .backgroundBlue {
-    background: #2979FF;
+    background: #0f4c81;
   }
   .backgroundLight {
     background: #F3F3F3;
