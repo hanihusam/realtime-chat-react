@@ -1,7 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
   html, body {
     font-family: 'Montserrat', sans-serif;
     background-color: #1b262c;
